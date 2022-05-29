@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Band</title>
+  <link rel="stylesheet" href="dinh_dang_style_the_band.css" />
+  <link rel="stylesheet" href="./responsive.css" />
+  <link rel="stylesheet" href="./file_Assets/fonts/themify-icons.css" />
+  <link rel="icon" href="./file_Assets/img/z2215464239730_e30444a3cb7a1ade6331bdb54446a717.jpg" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- .+ tên 1 class+ tab để gọi nhanh 1 thẻ div mang tên class
+		 // có thể là tên thẻ #+tên+tab để gọi ra thẻ mang id tên-->
+  <!-- Cách để chọn nhiều thành phần trong code mà nó giống nhau là :
+   + Bấm chọn rồi Ctrl+D sau khi ctrl+D thì alt+Shift+-> rồi paste sang css,
+   sau khi paste sang thì mình giữ alt rồi chọn con trỏ chuột từng cái 1.
+    Sau đó alt+-> để bỏ qua đối tượng... -->
+
+  <div id="main">
+    <div id="header">
+      <!-- bắt đầu thanh nav -->
+      <!-- ul#nav>li*5>a  -->
+      <ul id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#content">Band</a></li>
+        <li><a href="#ticket">Tour</a></li>
+        <li><a href="#CONTACT">Contact</a></li>
+        <li>
+          <a href="#">
+            More <i class="icon ti-angle-down"></i>
+            <!-- include file css font tải về rồi gọi tên icon ra
+          và đặt tên class gọi ra rồi css -->
+          </a>
+          <!-- Có thể người thiết kế muốn có nhiều menu hơn thì 
+					ta có phải dùng class để tạo menu nhỏ -->
+          <ul class="subnav">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- kết thúc thanh nav -->
+      <!-- bắt đầu đặt icon search -->
+      <div class="icon-search">
+        <i class="iconn ti-search"></i>
+      </div>
+      <div id="menu-mobile-btn" class="icon-menu">
+        <i class="iconn ti-menu"></i>
+      </div>
+      <!-- mobile menu btn -->
+      <!-- kết thúc icon search -->
+    </div>
+    <!--  Để select nhiều id hoặc thuộc tính thì mình bôi đen 
+			và bấm ctrlD vào id tiếp theo để sửa -->
+    <!-- begin slider -->
+    <div id="slider">
+      <div class="text">
+        <div class="tren">Chicago</div>
+        <div class="duoi">Thank you, Chicago - A night we won't forget.</div>
+      </div>
+    </div>
+    <!-- end slider -->
+    <!-- begin content -->
+    <div id="content">
+      <div class="title">THE BAND</div>
+      <div class="slogan">We love music</div>
+      <p class="paragrap">
+        We have created a fictional band website. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+      <div class="member-list">
+        <div class="member-item">
+          <p class="name">name</p>
+          <img src="./file_Assets/img/bandmember.jpg" alt="name" class="name-char" />
+        </div>
+        <div class="member-item">
+          <p class="name">name</p>
+          <img src="./file_Assets/img/bandmember.jpg" alt="name" class="name-char" />
+        </div>
+        <div class="member-item">
+          <p class="name">name</p>
+          <img src="./file_Assets/img/bandmember.jpg" alt="name" class="name-char" />
+        </div>
+      </div>
+      <div class="clear"></div>
+      <!-- clear float -->
+    </div>
+    <!-- end content -->
+
+    <!-- begin tour ticket -->
+    <div id="ticket">
+      <div id="content">
+        <div class="title text-white">TOUR DATE</div>
+        <div class="slogan text-white">Remember to book your tickets!</div>
+        <ul class="ticket-list">
+          <li>September <span class="sold-out">sold-out</span></li>
+          <li>October <span class="sold-out">sold-out</span></li>
+          <li>November <span class="so-luong">3</span></li>
+        </ul>
+        <!-- begin place list -->
+        <div class="place-list">
+          <div class="place-item">
+            <img src="./file_Assets/img/newyork.jpg" alt="newyork" class="place1" />
+            <div class="place-body">
+              <h3 class="place-heading">New York</h3>
+              <p class="place-time">Fri 27 Nov 2016</p>
+              <p class="description">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <!-- <a href="#" class="place-btn"></a> -->
+              <button class="button-buy-tickets js-buy-tickets">
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+          <div class="place-item">
+            <img src="./file_Assets/img/paris.jpg" alt="paris" class="place1" />
+            <div class="place-body">
+              <h3 class="place-heading">Paris</h3>
+              <p class="place-time">Sat 28 Nov 2016</p>
+              <p class="description">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <button class="button-buy-tickets js-buy-tickets">
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+          <div class="place-item">
+            <img src="./file_Assets/img/sanfran.jpg" alt="sanfran" class="place1" />
+            <div class="place-body">
+              <h3 class="place-heading">San Francisco</h3>
+              <p class="place-time">Sun 29 Nov 2016</p>
+              <p class="description">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <!-- <a href="#" class="place-btn">Buy Tickets</a> -->
+              <button class="button-buy-tickets js-buy-tickets">
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <!-- end place list -->
+      </div>
+    </div>
+    <!-- end tour ticket -->
+    <div id="CONTACT">
+      <div id="content">
+        <div class="title">CONTACT</div>
+        <div class="slogan">Fan? Drop a note!</div>
+        <form action="">
+          <table id="contact">
+            <tr>
+              <td>
+                <div class="label-contact">
+                  <label for="location">
+                    <i class="ti-location-pin"></i> Chicago, US</label>
+                  <br />
+                  <label for="phone">
+                    <i class="ti-headphone-alt"></i> Phone: +00 151515</label>
+                  <br />
+                  <label for="message">
+                    <i class="ti-email"></i> Email: mail@mail.com</label>
+                </div>
+              </td>
+
+              <td>
+                <div class="input-contact">
+                  <input type="text" id="location" required placeholder="Name" />
+                  <input type="email" id="phone" required placeholder="Email" />
+                  <br />
+                  <input type="text" id="message" required placeholder="Message" />
+                </div>
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Send" class="send-btn js-contact-send" />
+        </form>
+      </div>
+
+      <div class="map-section">
+        <img src="./file_Assets/img/map.jpg" alt="map" />
+      </div>
+      <div id="footer">
+        <div class="social-list">
+          <a href=""><i class="ti-facebook"></i></a>
+          <a href=""><i class="ti-instagram"></i></a>
+          <a href=""><i class="ti-twitter"></i></a>
+          <a href=""><i class="ti-tumblr"></i></a>
+          <a href=""><i class="ti-github"></i></a>
+          <a href=""><i class="ti-reddit"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- begin ticket modal -->
+  <div class="js-modal modal">
+    <div class="modal-container js-modal-container">
+      <header class="modal-header">
+        <i class="ti-bag"></i>
+        Tickets
+      </header>
+      <div class="modal-close js-modal-close">
+        <i class="ti-close"></i>
+      </div>
+      <div class="modal-body">
+        <label for="quantity" class="modal-label">
+          <i class="ti-shopping-cart"></i>
+          Tickets, $15 per person
+        </label>
+        <input id="quantity" ype="text" class="modal-input" placeholder="How many?" />
+
+        <label for="email" class="modal-label">
+          <i class="ti-user"></i>
+          Send To
+        </label>
+        <input id="email" type="text" class="modal-input" placeholder="Enter Email" />
+        <button class="buy-ticket js-modal-pay">
+          Pay
+          <i class="ti-check"></i>
+        </button>
+      </div>
+      <footer class="modal-footer">
+        <p class="modal-help">Need <a href="">help?</a></p>
+      </footer>
+    </div>
+  </div>
+  <!-- end ticket modal -->
+
+  <!-- begin script buy buttons -->
+  <script>
+    const buyBttns = document.querySelectorAll(".js-buy-tickets");
+    const modal = document.querySelector(".js-modal");
+    const modalClose = document.querySelector(".js-modal-close");
+    const modalContainer = document.querySelector(".js-modal-container");
+    const modalPay = document.querySelector(".js-modal-pay");
+    const contactSend = document.querySelector(".js-contact-send");
+    // truyền vào modal bằng class .modal
+
+    function ShowBuyTickets() {
+      modal.classList.add("open");
+    }
+
+    function CloseBuyTickets() {
+      modal.classList.remove("open");
+    }
+    function CloseOnClicksVoid() {
+      event.stopPropagation();
+    }
+
+    function NotificationCustomer() {
+      alert("Thanks you for used my services");
+    }
+    function AlertForUsed() {
+      alert("Send contact successfully");
+    }
+
+    modal.addEventListener("click", CloseBuyTickets);
+    modalClose.addEventListener("click", CloseBuyTickets);
+    modalContainer.addEventListener("click", CloseOnClicksVoid);
+    modalPay.addEventListener("click", NotificationCustomer);
+
+    for (const buyBttn of buyBttns) {
+      buyBttn.addEventListener("click", ShowBuyTickets);
+    }
+    contactSend.addEventListener("click", AlertForUsed);
+
+    // begin mobile menu btn
+    var header = document.getElementById('header');
+    var mobileMenu = document.getElementById('menu-mobile-btn');
+    //auto đóng mở menu
+    mobileMenu.onclick = function() {
+      var isClose = header.clientHeight === 46;
+      if (isClose) {
+        header.style.height = 'auto';
+      }
+      else {
+        header.style.height = '46px';
+      }
+    } 
+    // auto đóng mở menu
+    var menuItems = document.querySelectorAll('#nav> li> a');
+    for( var i = 0; i < menuItems.length ; i++) {
+        var menuItem = menuItems[i];
+        menuItem.onclick = function(){
+          header.style.height = '46px';
+        }
+    }
+    
+    // end mobile menu btn
+  </script>
+  <!-- end script buy buttons -->
+</body>
+
+</html>
